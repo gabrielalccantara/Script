@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read -p"Digite um número " num
+
+(($num%2 ==0))&& echo O número é par || echo O número é impar
