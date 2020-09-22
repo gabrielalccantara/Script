@@ -1,0 +1,9 @@
+#!/bin/bash
+
+one=$1
+two=$2
+three=$3
+
+ls $one $two $three &> /dev/null || exit 0
+linhas=$(wx -l $one $two $three)
+echo $linhas
