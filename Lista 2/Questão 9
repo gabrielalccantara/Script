@@ -1,0 +1,7 @@
+#!/bin/bash
+
+porcentagema=$(echo "scale=2; (($1*$2))" | bc)
+porcentagemb=$(echo "scale=2; (($2*1))" | bc)
+
+echo "A porcentagem é: ${porcentagema}"
+echo "A segunda porcentagem é: ${porcentagemb}"
