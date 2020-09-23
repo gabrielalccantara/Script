@@ -1,0 +1,5 @@
+#!/bin/bash
+
+soma=$( echo "scale=20; (($1+$2+$3))" | bc)
+
+echo "A soma dos números é: ${soma}"
