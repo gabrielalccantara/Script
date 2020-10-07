@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Redirecionando sem o Pipe
+bc < a.txt
+
+#Redirecionando com o Pipe
+cat a.txt | bc
