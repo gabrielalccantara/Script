@@ -1,0 +1,2 @@
+./loop.sh >> 1.log 2>> 2.log
+./loop.sh &> 3.log
