@@ -1,0 +1,7 @@
+#!/bin/bash
+
+lista=$(ls)
+
+for i in $lista; do
+	cat $i | wc -l
+done
