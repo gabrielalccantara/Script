@@ -1,0 +1,7 @@
+#!/bin/bash
+
+arquivos=$*
+
+for i in $arquivos ; do
+	ls $i &> /dev/null && echo $i "SIM" || echo $i "NÃO"
+done
