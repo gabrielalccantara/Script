@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#não finalizada
+
+if [ -n $a ]; then
+   echo "A variável é: " $a
+fi
+
+if [ -n $b ]; then
+   echo "A variável é: " $b
+fi
+
+if [ -n $c ]; then
+   echo "A variável é: " $c
+fi
