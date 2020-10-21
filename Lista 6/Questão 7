@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ls=$(ls)
+arq=$(ls | head -1)
+for x in *; do
+    if [ $x -nt $arq ]; then
+        arq=$x
+    fi
+done
+
+echo $arq
