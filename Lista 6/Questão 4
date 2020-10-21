@@ -1,0 +1,15 @@
+#!/bin/bash
+
+arq1=$1
+arq2=$2
+arq3=$3
+
+count=0
+
+(($(cat $arq1 | wc -l) >= 5)) && count+=1
+(($(cat $arq2 | wc -l) >= 5)) && count+=1
+(($(cat $arq2 | wc -l) >= 5)) && count+=1
+
+if (($count >= 2)); then
+	echo "dois arquivos passaram do tamanho crítico"
+fi
