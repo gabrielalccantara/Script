@@ -1,0 +1,26 @@
+#!/bin/bash
+
+while :; do
+
+    read -p "Digite uma opção:" param arq
+
+    clear
+    case $param in
+
+    q)
+        break
+        ;;
+    d)
+        ls -F | grep '/'
+        ;;
+    f)
+        ls -F | grep -v '/'
+        ;;
+    v)
+        cat $arq
+        ;;
+    cd)
+        cd $dir
+        ;;
+
+done
