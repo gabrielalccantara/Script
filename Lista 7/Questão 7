@@ -1,0 +1,40 @@
+#!/bin/bash
+
+cat << EOF 
+
+UNTIL 
+Execute consequent-commands as long as test-commands has an exit status which is not zero.
+
+Syntax
+      until test-commands; do consequent-commands; done
+The return status is the exit status of the last command executed in consequent-commands, or zero if none was executed.
+
+This is a BASH shell builtin, to display your local syntax from the bash prompt type: help until
+
+Example
+
+#!/bin/bash
+i=1
+until [ $i -gt 6 ]
+do
+	echo "Welcome $i times."
+	i=$(( i+1 ))
+done
+
+
+WHILE
+perform a command multiple times
+
+Synopsis
+
+while CONDITION; COMMANDS...; end
+Description
+
+The while builtin causes fish to continually execute CONDITION and execute COMMANDS as long as CONDITION returned with status 0. If CONDITION is false on the first time, COMMANDS will not be executed at all. Hints: use begin; ...; end for complex conditions; more complex control can be achieved with while true containing a break.
+
+Example
+
+while test -f foo.txt; echo file exists; sleep 10; end
+causes fish to print the line 'file exists' at 10 second intervals as long as the file foo.txt exists.
+
+EOF
