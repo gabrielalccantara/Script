@@ -4,7 +4,6 @@ while :; do
 
     read -p "Digite uma opção:" param arq
 
-    clear
     case $param in
 
     q)
