@@ -1,0 +1,6 @@
+#!/bin/bash
+
+arquivo=$1
+x=$2
+
+cat $arquivo | head -$x | tail -1
