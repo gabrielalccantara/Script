@@ -1,0 +1,10 @@
+#!/bin/bash
+
+arquivo=$1
+x=$2
+
+while true; do
+    cat $arquivo | cut -b $((y+1))-$((y+x))
+    y=$((y+=$x))
+    read a
+done
