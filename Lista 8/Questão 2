@@ -1,0 +1,6 @@
+#!/bin/bash
+
+arquivo=$1
+y=$2
+
+cut -b $y $arquivo
