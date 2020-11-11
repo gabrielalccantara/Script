@@ -1,0 +1,10 @@
+  
+#!/bin/bash
+
+read -p 'Digite uma senha' senha
+
+if (echo $senha | grep -P '(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])'); then
+    echo 'A senha está dentro do padrão'
+else
+    echo 'A senha não está dentro do padrão'
+fi
