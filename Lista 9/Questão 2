@@ -1,0 +1,6 @@
+#!/bin/bash
+
+arquivo=$1
+count=$2
+((count == 0)) && grep -v -E '^$' $arquivo > tmp && mv tmp $arquivo
+((count == 1)) && grep -E '^$' $arquivo | wc -l
