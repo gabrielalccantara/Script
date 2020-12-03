@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Digite os números: "
+read -a array
+menor=${array[0]}
+
+for i in "${array[@]}"
+do
+    if [[ "$i" -lt "$menor" ]]; then
+        menor="$i"
+    fi
+done
+
+echo "O menor número é: $menor"
