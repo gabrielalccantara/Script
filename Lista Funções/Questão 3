@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function ping_test {
+    
+    if (ping -c1 $1 &>/dev/null); then
+        echo "OK"
+    else
+        echo "FALHA"
+    fi
+}
