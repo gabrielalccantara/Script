@@ -1,0 +1,14 @@
+#!/bin/bash
+
+source questao1.sh
+
+array=($(cat numeros.txt | tr '\n' ' '))
+maior_num=0
+menor_num=0
+for i in ${array[*]}; do
+    maior_num=$(maior $i $max)
+    menor_num=$(menor $i $min)
+done
+
+echo $maior_num
+echo $menor_num
