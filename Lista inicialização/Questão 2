@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -r ~/tmp/*
+
+#Editar o arquivo crontab usando crontab -e, e inserindo @reboot /caminho/arquivo essa tarefa deve ser executada sempre que o sistema for iniciado
