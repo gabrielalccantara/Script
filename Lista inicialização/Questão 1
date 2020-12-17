@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "A persistência é o caminho do êxito. O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo. Mesmo não atingindo o alvo, quem busca e vence obstáculos, no mínimo fará coisas admiráveis. "
+date
+
+#Editar o arquivo crontab usando crontab -e, e inserindo @reboot /caminho/arquivo essa tarefa deve ser executada sempre que o sistema for iniciado
